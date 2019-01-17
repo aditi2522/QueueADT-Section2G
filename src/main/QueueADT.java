@@ -24,7 +24,8 @@ public class QueueADT
 	int peek()
 	{
 		int item = 0;
-
+		if(!isEmpty())
+			item=queue[front];
 		return item;
 	}
 
@@ -36,8 +37,9 @@ public class QueueADT
 	}
 
 	boolean isEmpty()
+
 	{
-		return false;
+
 	}
 
 	boolean isFull()
